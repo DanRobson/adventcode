@@ -18,6 +18,11 @@ class Data {
         return cacheDataLocally("daythree.txt", "https://adventofcode.com/2022/day/3/input")
     }
 
+    public static File getAssignments()
+    {
+        return cacheDataLocally("dayfour.txt", "https://adventofcode.com/2022/day/4/input")
+    }
+
     private static File cacheDataLocally(String fileName, String uri)
     {
         File localData = new File(fileName)
