@@ -28,6 +28,11 @@ class Data {
         return cacheDataLocally("dayfive.txt", "https://adventofcode.com/2022/day/5/input")
     }
 
+    public static List<Character> getDataStream()
+    {
+        return cacheDataLocally("daysix.txt", "https://adventofcode.com/2022/day/6/input").text.toCharArray().toList()
+    }
+
     private static File cacheDataLocally(String fileName, String uri)
     {
         File localData = new File(fileName)
