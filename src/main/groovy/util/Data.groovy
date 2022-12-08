@@ -33,6 +33,11 @@ class Data {
         return cacheDataLocally("daysix.txt", "https://adventofcode.com/2022/day/6/input").text.toCharArray().toList()
     }
 
+    public static File getTerminalInput()
+    {
+        return cacheDataLocally("dayseven.txt", "https://adventofcode.com/2022/day/7/input")
+    }
+
     private static File cacheDataLocally(String fileName, String uri)
     {
         File localData = new File(fileName)
